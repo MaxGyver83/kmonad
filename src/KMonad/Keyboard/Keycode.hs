@@ -352,8 +352,8 @@ keyNames = mconcat
 aliases :: Q.MultiMap Keycode Text
 aliases = Q.mkMultiMap
   [ (KeyEnter,          ["ret", "return", "ent"])
-  , (KeyMinus,          ["min", "-"])
-  , (KeyEqual,          ["eql", "="])
+  , (KeyMinus,          ["min", "ß"])
+  , (KeyEqual,          ["eql", "´"])
   , (KeySleep,          ["zzz"])
   , (KeySpace,          ["spc"])
   , (KeyPageUp,         ["pgup"])
@@ -382,15 +382,15 @@ aliases = Q.mkMultiMap
   , (KeyWakeUp,         ["wkup"])
   , (KeyLeft,           ["lft"])
   , (KeyRight,          ["rght"])
-  , (KeyLeftBrace,      ["lbrc", "["])
-  , (KeyRightBrace,     ["rbrc", "]"])
-  , (KeySemicolon,      ["scln", ";"])
-  , (KeyApostrophe,     ["apos", "'"])
-  , (KeyGrave,          ["grv", "`"])
-  , (KeyBackslash,      ["bksl", "\\"]) -- NOTE: "\\" here is a 1char string, the first \ is consumed by Haskell as an escape character
+  , (KeyLeftBrace,      ["lbrc", "ü"])
+  , (KeyRightBrace,     ["rbrc", "+"])
+  , (KeySemicolon,      ["scln", "ö"])
+  , (KeyApostrophe,     ["apos", "ä"])
+  , (KeyGrave,          ["grv", "^"])
+  , (KeyBackslash,      ["bksl", "#"]) -- NOTE: "\\" here is a 1char string, the first \ is consumed by Haskell as an escape character
   , (KeyComma,          ["comm", ","])
   , (KeyDot,            ["."])
-  , (KeySlash,          ["/"])
+  , (KeySlash,          ["-"])
   , (KeyNumLock,        ["nlck"])
   , (KeyKpSlash,        ["kp/"])
   , (KeyKpEnter,        ["kprt"])

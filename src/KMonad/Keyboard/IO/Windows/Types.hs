@@ -195,8 +195,8 @@ kcMap = M.fromList $
   , (0x56, KeyV)
   , (0x57, KeyW)
   , (0x58, KeyX)
-  , (0x59, KeyY)
-  , (0x5A, KeyZ)
+  , (0x59, KeyZ)  -- DE: Z and Y swapped
+  , (0x5A, KeyY)
   , (0x5B, KeyLeftMeta)             -- Defined as Left Windows key (Natural Keyboard)
   , (0x5C, KeyRightMeta)             -- Defined as Right Windows key (Natural Keyboard)
   , (0x5D, KeyCompose)             -- Defined as Applications key (Natural Keyboard)
@@ -267,16 +267,16 @@ kcMap = M.fromList $
   , (0xB5, KeyMedia)
   -- , (0xB6, ???)             -- Defined as VK_LAUNCH_APP1
   -- , (0xB7, ???)             -- Defined as VK_LAUNCH_APP2
-  , (0xBA, KeySemicolon)    -- Defined as VK_OEM_1
-  , (0xBB, KeyEqual)        -- Defined as VK_OEM_PLUS
+  , (0xC0, KeySemicolon)    -- Defined as VK_OEM_1, DE: OEM_3
+  , (0xDD, KeyEqual)        -- Defined as VK_OEM_PLUS, DE: OEM_6
   , (0xBC, KeyComma)        -- Defined as VK_OEM_COMMA
-  , (0xBD, KeyMinus)        -- Defined as VK_OEM_MINUS
+  , (0xDB, KeyMinus)        -- Defined as VK_OEM_MINUS, DE: OEM_4
   , (0xBE, KeyDot)          -- Defined as VK_OEM_PERIOD
-  , (0xBF, KeySlash)        -- Defined as VK_OEM_2
-  , (0xC0, KeyGrave)        -- Defined as VK_OEM_3
-  , (0xDB, KeyLeftBrace)    -- Defined as VK_OEM_4
-  , (0xDC, KeyBackslash)    -- Defined as VK_OEM_5
-  , (0xDD, KeyRightBrace)   -- Defined as VK_OEM_6
+  , (0xBD, KeySlash)        -- Defined as VK_OEM_2, DE: OEM_MINUS
+  , (0xDC, KeyGrave)        -- Defined as VK_OEM_3, DE: OEM_5
+  , (0xBA, KeyLeftBrace)    -- Defined as VK_OEM_4, DE: OEM_1
+  , (0xBF, KeyBackslash)    -- Defined as VK_OEM_5, DE: OEM_2
+  , (0xBB, KeyRightBrace)   -- Defined as VK_OEM_6, DE: OEM_PLUS
   , (0xDE, KeyApostrophe)   -- Defined as VK_OEM_7
   -- , (0xDF, ???)             -- Defined ask VK_OEM_8
   -- , (0xE1, ???)             -- Defined as `OEM specific`
