@@ -203,12 +203,13 @@ buttonNames :: [(Text, DefButton)]
 buttonNames = shiftedNames <> escp <> util
   where
     emitS c = KAround (KEmit KeyLeftShift) (KEmit c)
+    emitA c = KAround (KEmit KeyRightAlt) (KEmit c)
     -- Escaped versions for reserved characters
-    escp = [ ("\\(", emitS Key9), ("\\)", emitS Key0)
-           , ("\\_", emitS KeyMinus), ("\\\\", KEmit KeyBackslash)]
+    escp = [ ("\\(", emitS Key8), ("\\)", emitS Key9)
+           , ("\\_", emitS KeySlash), ("\\\\", emitA KeyMinus)]  -- "\" is AltGr+KeyMinus
     -- Extra names for useful buttons
     util = [ ("_", KTrans), ("XX", KBlock)
-           , ("lprn", emitS Key9), ("rprn", emitS Key0)]
+           , ("lprn", emitS Key8), ("rprn", emitS Key9)]
 
 
 
